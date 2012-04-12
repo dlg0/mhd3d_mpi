@@ -1,4 +1,15 @@
-PROBLEM: SegFault
-When running mhd3d with a large grid or high SH fit resolution it may cause a segfault since the variables are auto-assigned to the stack. The stack will have a pre-defined size and if this is exceeded the program will segFault. To bypass this error execute the following at the bash/sh/ksh terminal you are running the code from:
+Here is an inital version of the MHD-3D code using MPI.
 
-ulimit -s unlimited
+Building
+--------
+
+Edit Makefile to set the compiler
+
+then just run
+
+make
+
+Running
+-------
+
+mpirun -n 4 ./xMHD3D
