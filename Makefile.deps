@@ -1,0 +1,7 @@
+xMHD3D: \
+		obj/mhd_grid.o \
+		obj/vA_profile.o \
+		obj/timer.o
+
+obj/mhd_grid.o: \
+		obj/newtonsRule.o
